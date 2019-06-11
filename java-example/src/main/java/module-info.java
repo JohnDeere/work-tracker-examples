@@ -10,5 +10,6 @@
 open module com.deere.worktracker.java.example {
     requires com.deere.isg.worktracker.servlet;
     requires javax.servlet.api;
+    requires slf4j.api;
     exports com.deere.example;
 }
