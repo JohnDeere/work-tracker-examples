@@ -4,6 +4,9 @@
 # Work Tracker Examples
 Some examples of how to use the [Work Tracker](https://github.com/JohnDeere/work-tracker) library.
 
+The JDK 8 based examples are in the master branch.
+The JDK 11 based examples are in the JDK11 branch.
+
 ## Running the Examples
 ### [Spring Boot](./spring-boot-example):
 
