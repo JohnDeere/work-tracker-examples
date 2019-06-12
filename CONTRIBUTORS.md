@@ -4,3 +4,5 @@
   * Prototyping, Design Direction, Bug Fixes
 * **[Mahesh Gaya](https://github.com/maheshgaya)**
   * Initial Implementation, Documentation
+* **[Prabin Adhikari](https://github.com/PrabinAdhikari)**
+  * Java module system support
