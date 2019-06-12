@@ -8,7 +8,7 @@
 // Unpublished Work (c) 2019 Deere & Company
 
 open module com.deere.isg.worktracker.spring.boot.example {
-    requires  com.deere.isg.worktracker.spring.boot;
+    requires com.deere.isg.worktracker.spring.boot;
     requires spring.boot.starter.web;
     requires spring.boot.starter.security;
     requires spring.boot.autoconfigure;
