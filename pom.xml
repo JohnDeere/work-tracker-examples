@@ -34,7 +34,7 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 
-        <work-tracker.version>1.0.0-rc15</work-tracker.version>
+        <work-tracker.version>1.0.0-rc16</work-tracker.version>
 
         <spring.boot.version>1.5.19.RELEASE</spring.boot.version>
         <spring.version>4.2.2.RELEASE</spring.version>
