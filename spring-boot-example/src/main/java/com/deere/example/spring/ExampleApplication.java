@@ -93,8 +93,8 @@ public class ExampleApplication {
         protected void configure(HttpSecurity http) throws Exception {
             http
                     .authorizeRequests()
-                    .antMatchers("/cheese/**").hasRole("USER").anyRequest().authenticated()
-                    .antMatchers("/health/**").permitAll().anyRequest().anonymous()
+                    .antMatchers("/cheese/**").hasRole("USER")
+                    .antMatchers("/health/**").permitAll()
                     .antMatchers("/**").permitAll().anyRequest().anonymous()
                     .and()
                     .formLogin().and()
