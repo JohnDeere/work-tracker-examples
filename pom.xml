@@ -29,17 +29,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <inceptionYear>2018</inceptionYear>
+        <year>2022</year>
         <copyrightOwner>Deere &amp; Company</copyrightOwner>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 
-        <work-tracker.version>1.0.0</work-tracker.version>
+        <work-tracker.version>1.1.2</work-tracker.version>
 
         <spring.boot.version>1.5.19.RELEASE</spring.boot.version>
         <spring.version>4.2.2.RELEASE</spring.version>
-        <groovy.version>2.4.8</groovy.version>
-        <servlet.version>3.1.0</servlet.version>
+        <groovy.version>3.0.12</groovy.version>
+        <servlet.version>4.0.1</servlet.version>
         <jetty.version>9.4.18.v20190429</jetty.version>
 
         <maven-license-plugin-version>1.8.0</maven-license-plugin-version>
@@ -161,28 +162,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.groovy.maven</groupId>
-                <artifactId>gmaven-plugin</artifactId>
-                <version>1.0</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>execute</goal>
-                        </goals>
-                        <configuration>
-                            <source>
-                                import java.util.Date
-                                import java.text.MessageFormat
-
-                                def vartimestamp = MessageFormat.format("{0,date,yyyy}", new Date())
-                                project.properties['currentYear'] = vartimestamp
-                            </source>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>com.mycila.maven-license-plugin</groupId>
                 <artifactId>maven-license-plugin</artifactId>
                 <version>${maven-license-plugin-version}</version>
@@ -192,7 +171,7 @@
                     <properties>
                         <!-- Values to be substituted in template -->
                         <h_inceptionYear>${inceptionYear}</h_inceptionYear>
-                        <h_currentYear>${currentYear}</h_currentYear>
+                        <h_currentYear>${year}</h_currentYear>
                         <h_copyrightOwner>${copyrightOwner}</h_copyrightOwner>
                     </properties>
                     <strictCheck>true</strictCheck>
