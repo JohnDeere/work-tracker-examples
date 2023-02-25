@@ -43,7 +43,7 @@
         <servlet.version>4.0.1</servlet.version>
         <jetty.version>9.4.50.v20221201</jetty.version>
 
-        <maven-license-plugin-version>1.8.0</maven-license-plugin-version>
+        <maven-license-plugin-version>1.9.0</maven-license-plugin-version>
     </properties>
 
     <scm>
