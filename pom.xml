@@ -37,7 +37,7 @@
 
         <work-tracker.version>1.1.2</work-tracker.version>
 
-        <spring.boot.version>2.7.3</spring.boot.version>
+        <spring.boot.version>2.7.9</spring.boot.version>
         <spring.version>4.2.2.RELEASE</spring.version>
         <groovy.version>3.0.12</groovy.version>
         <servlet.version>4.0.1</servlet.version>
